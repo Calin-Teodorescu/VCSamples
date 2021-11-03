@@ -14,5 +14,7 @@
 
 #define VC_EXTRALEAN
 
-#include <afxwin.h>      // MFC core and standard components
-#include <afxext.h>         // MFC extensions
+#include <afxwin.h>  // MFC core and standard components
+#include <afxext.h>  // MFC extensions
+
+#include <memory>
