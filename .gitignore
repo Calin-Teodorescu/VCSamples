@@ -264,3 +264,5 @@ paket-files/
 __pycache__/
 *.pyc
 
+/VC2012Samples/Windows 8 samples/C++/Windows 8 app samples/ControlChannelTrigger StreamWebSocket sample (Windows 8)/C++/ControlChannelTriggerWithStreamWebSocket/ControlChannelTriggerWithStreamWebSocket.vcxproj.filters
+/VC2012Samples/Windows 8 samples/C++/Windows 8 app samples/Creating a Windows Runtime in-process component sample (C++CX) (Windows 8)/C#,C++,JavaScript/CPP/ProxyStubsForWinRTComponents_client_cpp.vcxproj.filters

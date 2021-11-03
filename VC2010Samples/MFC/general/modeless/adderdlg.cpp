@@ -49,6 +49,7 @@ void CAdderDialog::DoDataExchange(CDataExchange* pDX)
 BEGIN_MESSAGE_MAP(CAdderDialog, CDialog)
 	//{{AFX_MSG_MAP(CAdderDialog)
 	//}}AFX_MSG_MAP
+	ON_BN_CLICKED(IDOK, &CAdderDialog::OnBnClickedOk)
 END_MESSAGE_MAP()
 
 
@@ -85,4 +86,11 @@ void CAdderDialog::OnCancel()
 void CAdderDialog::PostNcDestroy()
 {
 	delete this;
+}
+
+
+void CAdderDialog::OnBnClickedOk()
+{
+	// TODO: Add your control notification handler code here
+	CAdderDialog::OnOK();
 }
