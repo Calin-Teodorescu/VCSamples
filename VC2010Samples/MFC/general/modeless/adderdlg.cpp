@@ -59,7 +59,7 @@ END_MESSAGE_MAP()
 void CAdderDialog::OnOK()
 {
 	CEdit* pEdit = (CEdit*) GetDlgItem(IDC_NEWTEXT);
-	CListBox* pList = (CListBox*) (m_pParent->GetDlgItem(IDC_LIST));
+	CEdit* pList = (CEdit*) (m_pParent->GetDlgItem(IDC_LIST));
 
 	ASSERT(pList != NULL);
 	ASSERT(pEdit != NULL);
@@ -68,7 +68,10 @@ void CAdderDialog::OnOK()
 	{
 		CString str;
 		pEdit->GetWindowText(str);
-		pList->AddString(str);
+		CString target;
+		pList->GetWindowText(target);
+		target += str;
+		pList->SetWindowText( target );
 	}
 }
 
